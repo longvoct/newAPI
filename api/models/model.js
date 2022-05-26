@@ -81,6 +81,12 @@ const cClassSchema = new mongoose.Schema({
       ref: "Student",
     },
   ],
+  term: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Term",
+    },
+  ],
   schoolYears: [
     {
       type: mongoose.Schema.Types.ObjectId,

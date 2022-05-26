@@ -10,9 +10,9 @@ const studentRoute = require("./routes/student");
 const gradeRoute = require("./routes/grade");
 const cClassRoute = require("./routes/cClass");
 const subjectRoute = require("./routes/subject");
+const termRoute = require("./routes/term");
+const schoolYearRoute = require("./routes/schoolYear");
 // const coEffectRoute = require("./routes/coEffect");
-// const termRoute = require("./routes/term");
-// const schoolYearRoute = require("./routes/schoolYear");
 // const reportedSubject = require("./routes/reportedSubject");
 // const reportedTerm = require("./routes/reportedTerm");
 
@@ -33,9 +33,9 @@ app.use("/api/student", studentRoute);
 app.use("/api/grade", gradeRoute);
 app.use("/api/class", cClassRoute);
 app.use("/api/subject", subjectRoute);
+app.use("/api/termRoute", termRoute);
+app.use("/api/schoolYear", schoolYearRoute);
 // app.use("/api/coEffects", coEffectRoute);
-// app.use("/api/termRoute", termRoute);
-// app.use("/api/schoolYears", schoolYearRoute);
 // app.use("/api/reportedSubjects", reportedSubject);
 // app.use("/app/reportedTerms", reportedTerm);
 
