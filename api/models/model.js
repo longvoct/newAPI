@@ -41,12 +41,12 @@ const studentSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "CClass",
   },
-  subjects: [
+  /*subjects: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Subject",
     },
-  ],
+  ],*/
 });
 
 //gradeSchema
