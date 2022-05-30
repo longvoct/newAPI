@@ -115,34 +115,6 @@ const subjectSchema = new mongoose.Schema({
   ],
 });
 
-// //Bảng điểm môn
-// const scoreSubjectSchema = new mongoose.Schema({
-//   _classes: [
-//     {
-//       type: mongoose.Schema.Types.ObjectId,
-//       ref: "_Class",
-//     },
-//   ],
-//   subjects: [
-//     {
-//       type: mongoose.Schema.Types.ObjectId,
-//       ref: "Subject",
-//     },
-//   ],
-//   terms: [
-//     {
-//       type: mongoose.Schema.Types.ObjectId,
-//       ref: "Term",
-//     },
-//   ],
-//   schoolYears: [
-//     {
-//       type: mongoose.Schema.Types.ObjectId,
-//       ref: "SchoolYear",
-//     },
-//   ],
-// });
-
 //Bảng điểm
 const scoreSheetSchema = new mongoose.Schema({
   cClasses: [

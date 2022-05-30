@@ -33,7 +33,7 @@ app.use("/api/student", studentRoute);
 app.use("/api/grade", gradeRoute);
 app.use("/api/class", cClassRoute);
 app.use("/api/subject", subjectRoute);
-app.use("/api/termRoute", termRoute);
+app.use("/api/term", termRoute);
 app.use("/api/schoolYear", schoolYearRoute);
 // app.use("/api/coEffects", coEffectRoute);
 // app.use("/api/reportedSubjects", reportedSubject);
