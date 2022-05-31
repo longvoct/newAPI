@@ -4,11 +4,11 @@ const termController = require("../controller/termController");
 // ADD A TERM
 router.post("/", termController.addTerm);
 
-//GET A TERM
-router.get("/:id", termController.getTerm);
-
 //GET ALL TERMS
 router.get("/", termController.getAllTerms);
+
+//GET A TERM
+router.get("/:id", termController.getTerm);
 
 //UPDATE A TERM
 router.put("/:id", termController.updateTerm);
