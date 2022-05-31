@@ -12,9 +12,10 @@ const cClassRoute = require("./routes/cClass");
 const subjectRoute = require("./routes/subject");
 const termRoute = require("./routes/term");
 const schoolYearRoute = require("./routes/schoolYear");
-// const coEffectRoute = require("./routes/coEffect");
-// const reportedSubject = require("./routes/reportedSubject");
-// const reportedTerm = require("./routes/reportedTerm");
+const scoreSubjectRoute = require("./routes/scoreSubject");
+const coEffectRoute = require("./routes/coEffect");
+const reportedSubjectRoute = require("./routes/reportedSubject");
+const reportedTermRoute = require("./routes/reportedTerm");
 
 app.use(
   cors({
@@ -35,9 +36,10 @@ app.use("/api/class", cClassRoute);
 app.use("/api/subject", subjectRoute);
 app.use("/api/term", termRoute);
 app.use("/api/schoolYear", schoolYearRoute);
-// app.use("/api/coEffects", coEffectRoute);
-// app.use("/api/reportedSubjects", reportedSubject);
-// app.use("/app/reportedTerms", reportedTerm);
+app.use("/api/scoreSubject", scoreSubjectRoute);
+app.use("/api/coEffect", coEffectRoute);
+app.use("/api/reportedSubjects", reportedSubjectRoute);
+app.use("/app/reportedTerms", reportedTermRoute);
 
 mongoose
   .connect(process.env.MONGO_URL, {

@@ -48,7 +48,7 @@ const subjectController = {
   //DELETE A SUBJECT
   deleteSubject: async (req, res) => {
     try {
-      await Student.updateMany({ subjects: req.params.id }, { subjects: null });
+      // await Student.updateMany({ subjects: req.params.id }, { subjects: null });
       await Subject.findByIdAndDelete(req.params.id);
       res.status(200).json("Deleted successfully!");
     } catch (err) {
